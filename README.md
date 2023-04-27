@@ -3,4 +3,7 @@ Making a coding quiz to sharpen my javascript knowledge.  I am building a timed 
 
 The source code from this project was referenced from https://codepen.io/boopalan002/pen/yKZVGa , an open source quiz that was made available to the public. However, I have only used the code here as a starting point and made my own modification and changes based on my own understanding and appreciation of this open-source project.
 
-TODO: Add screenshot, and link to deployed application.
+URL:
+
+Screenshot of Bumble Bee Coding Quiz:
+![Screenshot of Bumble Bee Coding Quiz](./bumble-bee-coding-quiz.png)

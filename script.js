@@ -118,7 +118,7 @@ $(document).ready(function ()
 				{
 					displayScore();
 					$('#iTimeShow').html('Quiz Time Completed!');
-					$('#timer').html("You scored: " + correctAnswers + " out of: " + questions.length);
+					$('#timer').html("You scored: " + correctAnswers + " out of " + questions.length);
 					c=185;
 					$(document).find(".preButton").text("View Answer");
 					$(document).find(".nextButton").text("Play Again?");

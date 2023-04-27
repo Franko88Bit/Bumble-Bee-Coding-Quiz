@@ -19,7 +19,7 @@ p {
 }
 /* Quiz Classes */
  .quizContainer {
-    background-color: white;
+    background-color: purple;
     border-radius: 6px;
     width: 75%;
     margin: auto;
@@ -31,7 +31,7 @@ p {
 }
 .quizcontainer #quiz1
 {
-text-shadow:1px 1px 2px orange;
+text-shadow:1px 1px 2px whitesmoke;
 font-family:"Georgia", Arial, sans-serif;
 }
 .nextButton {
@@ -40,9 +40,9 @@ font-family:"Georgia", Arial, sans-serif;
    /* width: 150px;*/
     height: 40px;
     text-align: center;
-    background-color: lightgrey;
+    background-color: yellow;
     /*clear: both;*/
-    color: red;
+    color: black;
     font-family:'Gabriola', serif;
     position: relative;
     margin: auto;
@@ -54,14 +54,14 @@ font-family:"Georgia", Arial, sans-serif;
 }
 
 .preButton {
-    box-shadow: 3px 3px 5px #888;
+    box-shadow: 3px 3px 5px black;
     border-radius: 6px;
     /*width: 150px;*/
     height: 40px;
     text-align: center;
-    background-color: lightgrey;
+    background-color: yellow;
     /*clear: both;*/
-    color: red;
+    color: black;
     font-family:'Gabriola', serif;
     position: relative;
     margin: auto;
@@ -100,7 +100,7 @@ font-family:"Georgia", Arial, sans-serif;
 }
 .choiceList {
     font-family: 'Arial', serif;
-    color: #ed12cd;
+    color: black;
 	font-size:15px;
 	font-weight:bold;
 }

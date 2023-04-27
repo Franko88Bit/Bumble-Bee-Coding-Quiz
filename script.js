@@ -1,23 +1,24 @@
+// Correct answer considers 0 index
 var questions = [{
 	question: "1. Commonly used data types DO NOT Include ?",
 	choices: ["strings", "booleans", "alerts", "numbers",],
-	correctAnswer: 3
+	correctAnswer: 2
 }, {
 	question: "2. The condition  in an if / else statement is enclosed with _______ ?",
 	choices: ["quotes", "curly brackets", "parenthesis", "square brackets ?"],
-	correctAnswer: 2
+	correctAnswer: 1
 }, {
 	question: "3. String values must be enclosed within_______ when being assigned to varaibles?",
 	choices: ["commas", "curly brackets", "quotes", "parenthesis"],
-	correctAnswer: 3
+	correctAnswer: 2
 }, {
 	question: "4. A very useful tool used during development and debuggimg content to the debugger is",
 	choices: ["Javascript", "terminal/bash", "for loops", "console.log"],
-	correctAnswer: 4
+	correctAnswer: 3
 }, {
 	question: "5. Arrays in Javascript can be used to store________",
 	choices: ["number of strings", "other arrays", "booleans", "all of the above"],
-	correctAnswer: 4
+	correctAnswer: 3
 }, {
 
 }];
@@ -137,42 +138,6 @@ function timedCount() {
 		return false;
 
 	}
-
-	/*if(c == 0 )
-	{	
-		if (!quizOver) 
-		{
-			var val = $("input[type='radio']:checked").val();
-			if (val == questions[currentQuestion].correctAnswer) 
-			{
-				correctAnswers++;
-			}
-			currentQuestion++; // Since we have already displayed the first question on DOM ready
-			
-			if (currentQuestion < questions.length) 
-			{
-				displayCurrentQuestion();
-				c=15;
-			} 
-			else 
-			{
-				displayScore();
-				$('#timer').html('');
-				c=16;
-				$(document).find(".nextButton").text("Play Again?");
-				quizOver = true;
-				return false;
-			}
-		}
-		else 
-		{ // quiz is over and clicked the next button (which now displays 'Play Again?'
-			quizOver = false;
-			$(document).find(".nextButton").text("Next Question");
-			resetQuiz();
-			displayCurrentQuestion();
-			hideScore();
-		}		
-	}	*/
 	c = c - 1;
 	t = setTimeout(function () {
 		timedCount()

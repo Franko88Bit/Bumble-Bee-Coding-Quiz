@@ -5,7 +5,7 @@ var questions = [{
 	correctAnswer: 2
 }, {
 	question: "2. The condition  in an if / else statement is enclosed with _______ ?",
-	choices: ["quotes", "curly brackets", "parenthesis", "square brackets ?"],
+	choices: ["quotes", "curly brackets", "parenthesis", "square brackets"],
 	correctAnswer: 1
 }, {
 	question: "3. String values must be enclosed within_______ when being assigned to varaibles?",
@@ -19,8 +19,6 @@ var questions = [{
 	question: "5. Arrays in Javascript can be used to store________",
 	choices: ["number of strings", "other arrays", "booleans", "all of the above"],
 	correctAnswer: 3
-}, {
-
 }];
 
 
@@ -72,7 +70,6 @@ $(document).ready(function () {
 				$(document).find(".quizMessage").show();
 			}
 			else {
-				// TODO: Remove any message -> not sure if this is efficient to call this each time....
 				$(document).find(".quizMessage").hide();
 				if (val == questions[currentQuestion].correctAnswer) {
 					correctAnswers++;
@@ -179,7 +176,7 @@ function resetQuiz() {
 }
 
 function displayScore() {
-	$(document).find(".quizContainer > .result").text("You scored: " + correctAnswers + " out of: " + questions.length);
+	$(document).find(".quizContainer > .result").text("You scored: " + correctAnswers + " out of " + questions.length);
 	$(document).find(".quizContainer > .result").show();
 }
 

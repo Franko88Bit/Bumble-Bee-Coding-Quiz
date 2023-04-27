@@ -84,7 +84,7 @@ font-family:"Georgia", Arial, sans-serif;
     text-align: center;
 }
 .quizMessage {
-    background-color: peachpuff;
+    background-color: purple;
     border-radius: 6px;
     width: 20%;
     margin: auto;
@@ -108,7 +108,7 @@ font-family:"Georgia", Arial, sans-serif;
     width: 40%;
     height: auto;
     border-radius: 6px;
-    background-color: linen;
+    background-color: purple;
     margin: auto;
 	color:green;
     text-align: center;

@@ -1,23 +1,23 @@
 // Correct answer considers 0 index
 var questions = [{
 	question: "1. Commonly used data types DO NOT Include ?",
-	choices: ["strings", "booleans", "alerts", "numbers",],
+	choices: ["1. strings", "2. booleans", "3. alerts", "4. numbers",],
 	correctAnswer: 2
 }, {
 	question: "2. The condition  in an if / else statement is enclosed with _______ ?",
-	choices: ["quotes", "curly brackets", "parenthesis", "square brackets"],
+	choices: ["1. quotes", "2. curly brackets", "3. parenthesis", "4. square brackets"],
 	correctAnswer: 1
 }, {
 	question: "3. String values must be enclosed within_______ when being assigned to varaibles?",
-	choices: ["commas", "curly brackets", "quotes", "parenthesis"],
+	choices: ["1. commas", "2. curly brackets", "3. quotes", "4. parenthesis"],
 	correctAnswer: 2
 }, {
 	question: "4. A very useful tool used during development and debuggimg content to the debugger is",
-	choices: ["Javascript", "terminal/bash", "for loops", "console.log"],
+	choices: ["1. Javascript", "2. terminal/bash", "3. for loops", "4. console.log"],
 	correctAnswer: 3
 }, {
 	question: "5. Arrays in Javascript can be used to store________",
-	choices: ["number of strings", "other arrays", "booleans", "all of the above"],
+	choices: ["1. number of strings", "2. other arrays", "3. booleans", "4. all of the above"],
 	correctAnswer: 3
 }];
 
@@ -72,7 +72,12 @@ $(document).ready(function () {
 			else {
 				$(document).find(".quizMessage").hide();
 				if (val == questions[currentQuestion].correctAnswer) {
+					alert("Correct!");
 					correctAnswers++;
+				}
+				// wrong answer, need to punish user by decrementing timer count c by 10 seconds
+				else {
+					c = c - 10;
 				}
 				iSelectedAnswer[currentQuestion] = val;
 
@@ -92,6 +97,10 @@ $(document).ready(function () {
 					$(document).find(".preButton").text("View Answer");
 					$(document).find(".nextButton").text("Play Again?");
 					quizOver = true;
+					// prompt user to collect initials to show on UI
+					var userInitials = prompt("Please enter your initials");
+					// Show user his or her score with entered credentials from previous step
+					alert("Hi " + userInitials + " , your final score is BUZZZZZZ " + correctAnswers);
 					return false;
 
 				}
